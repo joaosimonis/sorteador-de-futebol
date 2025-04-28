@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/icon/favicon.ico" type="image/x-icon">
+  <title>Sorteador de Futebol</title>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <main class="container">
+    <h1>Sorteador de Futebol</h1>
+    
+    <section class="inputs"> 
+      <div>
+        <label for="goleiro">Adicionar goleiros 🧤</label>
+        <input type="text" name="goleiro" id="goleiro" placeholder="Digite o nome do goleiro">
+        <button type="button" id="btnAdicionarGoleiro">Adicionar</button>
+      </div>
+
+      <div>
+        <label for="jogador">Adicionar jogadores de linha</label>
+        <input type="text" name="jogador" id="jogador" placeholder="Digite o nome do jogador">
+        <button type="button" id="btnAdicionarJogador">Adicionar</button>
+      </div>
+
+      <div id="listaCompleta"></div>
+
+      <button id="sortearTimes">Sortear Times</button>
+      <button id="limparTela">Limpar Tela</button>
+    </section>
+
+    <section class="resultados">
+      <div class="time" id="timeA">
+        <h2>Time Preto</h2>
+        <ul></ul>
+      </div>
+      <div class="time" id="timeB">
+        <h2>Time Branco</h2>
+        <ul></ul>
+      </div>
+    </section>
+
+      <button id="voltarInicio">Voltar ao Início</button>
+  </main>
+  <script type="module" src="src/js/main.js"></script>
+</body>
+</html>
